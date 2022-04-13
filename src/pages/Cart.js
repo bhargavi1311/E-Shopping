@@ -1,8 +1,15 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { remove } from "../store/cartSlice";
 
 const Cart = (cartItems) => {
+  const dispatch = useDispatch();
+
   const items = useSelector((state) => state.cart);
+
+  const handleRemove = (itemId) => {
+   	 dispatch(remove(itemId));
+  };
 
   return (
     <>
@@ -22,14 +29,12 @@ const Cart = (cartItems) => {
                 <img src={item.images} alt="" />
                 <h2>{item.price}</h2>
                 <p>{item.title}</p>
-				<button>Remove</button>
+                <button onClick={() => handleRemove(item.id)}>Remove</button>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-    
     </>
   );
 };
