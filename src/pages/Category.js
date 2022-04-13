@@ -3,14 +3,12 @@ import FeatureItem from "./FeatureItem";
 import Product_Menu from "./Product_Menu";
 import Recommend from "./Recommend";
 import Slidebar from "./slidebar";
-// import Main_Category from "./Main_Category";
 
 const Category = () => {
   return (
     <div class="container">
       <div class="row">
       <Slidebar/>
-
         <div class="col-sm-9 padding-right">
           <div class="features_items">
             <h2 class="title text-center">Features Items</h2>

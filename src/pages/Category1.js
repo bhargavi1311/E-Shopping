@@ -1,7 +1,4 @@
 import React from "react";
-import { Slider } from "@mui/material";
-import FeatureItem from "./FeatureItem";
-import Product_Menu from "./Product_Menu";
 import Recommend from "./Recommend";
 import Details from "./Details";
 import Slidebar from "./slidebar";
@@ -11,21 +8,17 @@ const Category1 = () => {
     <div class="container">
       <div class="row">
         <Slidebar/>
-        
         <div class="col-sm-9 padding-right">
-        <div class="product-details">
-						<div class="col-sm-5">
-							<div class="view-product">
-								<img src="assets/images/product-details/1.jpg" alt="" />
-								<h3>ZOOM</h3>
-							</div>
-                            </div>
-                            <Details/>
-                            <Recommend/>
-            {/* <FeatureItem /> */}
+          <div class="product-details">
+            <div class="col-sm-5">
+              <div class="view-product">
+                <img src="assets/images/product-details/1.jpg" alt="" />
+                <h3>ZOOM</h3>
+              </div>
+            </div>
+            <Details />
+            <Recommend />
           </div>
-          {/* <Product_Menu />
-          <Recommend /> */}
         </div>
       </div>
     </div>

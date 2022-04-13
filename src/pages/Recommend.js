@@ -1,17 +1,14 @@
-import React, { useState } from "react";
-import Product_Recomend from "./Product_Recommend";
-import { useDispatch } from "react-redux";
+import React from "react";
+// import Product_Recomend from "./Product_Recommend";
+// import { useDispatch } from "react-redux";
 // import { add } from "../Store/cartSlice";
 
 const Cart = () => {
-	const dispatch = useDispatch();
+// 	const dispatch = useDispatch();
 	
 
 //   const [items, setItems] = useState(Product_Recomend);
 
-// const handleAdd = (product) =>{
-// 	dispatch(add(product));
-// }
 
   return (
     <>
@@ -27,12 +24,9 @@ const Cart = () => {
 													<img src="assets/images/home/recommend1.jpg" alt="" />
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
-													{/* <button onClick={()=>{
-														handleAdd(product)
-													}}
-													 class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart
-													</button> */}
-												</div>		
+													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												</div>
+												
 											</div>
 										</div>
 									</div>

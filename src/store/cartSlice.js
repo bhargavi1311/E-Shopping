@@ -8,8 +8,6 @@ const cartSlice = createSlice({
     reducers :{
         add(state,action) {
             state.push(action.payload);  
-           // console.log(state.cart);    
-            //localStorage.setItem("CartItems",JSON.parse(state.cart));
         },
         
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Category from "./Category";
 import Footer from "./Footer";
+import Slidebar from "./slidebar";
 
 const Home = () => {
     return (
