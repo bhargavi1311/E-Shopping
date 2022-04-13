@@ -8,17 +8,17 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist'
 import store from './store/store';
 
-// let persistor = persistStore(store);
+ let persistor = persistStore(store);
 
 
 ReactDOM.render(
   <>
   <Provider store={store}>
-  {/* <PersistGate loading={null} persistor={persistor}> */}
+  <PersistGate loading={null} persistor={persistor}>
   <BrowserRouter>
     <App />
   </BrowserRouter>
-  {/* </PersistGate> */}
+  </PersistGate>
   </Provider>
 </>,
   document.getElementById('root')

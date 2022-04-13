@@ -9,7 +9,7 @@ const cartSlice = createSlice({
         add(state,action) {
             state.push(action.payload);  
            // console.log(state.cart);    
-            localStorage.setItem("CartItems",JSON.parse(state.cart));
+            //localStorage.setItem("CartItems",JSON.parse(state.cart));
         },
         
 
